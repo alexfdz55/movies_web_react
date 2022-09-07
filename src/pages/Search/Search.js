@@ -47,6 +47,7 @@ const Search = () => {
   useLayoutEffect(() => {
     window.scroll(0, 0);
     fetchSearch();
+    // eslint-disable-next-line
   }, [type, page])
 
   return (
@@ -66,7 +67,7 @@ const Search = () => {
             onSubmit = {fetchSearch}
             onKeyDown = {(e)=> {
               // console.log(e.key);
-              if(e.key == 'Enter'){
+              if(e.key === 'Enter'){
                 fetchSearch();
               }
             }}
