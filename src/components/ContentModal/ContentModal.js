@@ -3,7 +3,7 @@ import Backdrop from '@mui/material/Backdrop';
 import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import '../SingleContent/SingleContent.css';
-import { makeStyles, Button } from '@mui/material';
+import {  Button } from '@mui/material';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import axios from 'axios';
 import {
@@ -25,23 +25,6 @@ const style = {
       
 };
 
-// const useStyles = makeStyles((theme) => ({
-//     modal: {
-//       display: "flex",
-//       alignItems: "center",
-//       justifyContent: "center",
-//     },
-//     paper: {
-//       width: "90%",
-//       height: "80%",
-//       backgroundColor: "#39445a",
-//       border: "1px solid #282c34",
-//       borderRadius: 10,
-//       color: "white",
-//       boxShadow: theme.shadows[5],
-//       padding: theme.spacing(1, 1, 3),
-//     },
-//   }));
 
 export default function ContentModal({ children, media_type, id }) {
     // const classes = useStyles();
